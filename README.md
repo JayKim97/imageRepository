@@ -32,7 +32,8 @@ Images:
 
 ## installation
 
-PLEASE DOWNLOAD <a src="https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/resnet50_coco_best_v2.0.1.h5">resnet50_coco_best_v2.1.0.h5</a> and add to helper directory
+PLEASE DOWNLOAD resnet50_coco_best_v2.1.0.h5 and add to helper directory  
+https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/resnet50_coco_best_v2.0.1.h5
 
 ```bash
 gh repo clone JayKim97/shopifyChallenge

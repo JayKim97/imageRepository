@@ -1,6 +1,8 @@
 import mongoose from "mongoose";
 import Image from "../models/image.js";
 import User from "../models/user.js";
+import https from "https";
+import request from "request";
 
 export const getImage = async (req, res) => {
   try {
@@ -22,10 +24,22 @@ export const createImage = async (req, res) => {
   // const user = await User.findById(newImage.creatorId);
 
   try {
-    // const image = await newImage.save();
+    const image = await newImage.save();
     // user.posted.push(image._id);
     // await User.findByIdAndUpdate(user._id, user, { new: true });
     res.status(201).json(newImage);
+    request(
+      {
+        method: "POST",
+        url: "http://127.0.0.1:8000/flask",
+        json: { id: image.id },
+      },
+      (error, response, body) => {
+        console.log(error);
+        console.log(response);
+        console.log(body);
+      }
+    );
   } catch (error) {
     res.status(409).json({ message: error.message });
   }

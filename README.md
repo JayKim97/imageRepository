@@ -4,7 +4,7 @@ Simple Image Repository with image detection
 
 ## LIVE DEMO LINK
 
-MAY TAKE UP TO 30 SECONDS FOR HEROKU TO REACTIVATE THE BACKEND
+MAY TAKE UP TO 30 SECONDS FOR HEROKU TO REACTIVATE THE BACKEND  
 Live demo is missing image detection classifier
 
 https://shopify-frontend.netlify.app/
@@ -31,6 +31,8 @@ Images:
 - Image content detection
 
 ## installation
+
+PLEASE DOWNLOAD <a src="https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/resnet50_coco_best_v2.0.1.h5">resnet50_coco_best_v2.1.0.h5</a> and add to helper directory
 
 ```bash
 gh repo clone JayKim97/shopifyChallenge
